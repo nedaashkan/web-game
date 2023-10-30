@@ -1,0 +1,67 @@
+/* add css varibles
+add css gobal verlibles
+add rem and em */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.off-circle {
+  width: 11px;
+  height: 11px;
+  background-color: #0a0611;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: 1px solid #01cff6;
+  cursor: pointer;
+}
+.on-circle {
+  background-color: #01cff6;
+}
+.btn-box button {
+  border: 2px solid #00d5ff;
+}
+.physical-btn {
+  background-color: #000000;
+  color: #00d5ff;
+  border-radius: 5px 0 0 5px;
+}
+.digital-btn {
+  background-color: #00d5ff;
+  color: #000000;
+  border-radius: 0 5px 5px 0;
+}
+.clothing-accessories-box h1,
+.action-figures-box h1 {
+  color: #e6e6e6;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.action-figures-box p {
+  color: #e6e6e6;
+  font-family: inherit;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+.look-all-btn {
+  background-color: #000000;
+  border: 1px solid #00d5ff;
+  color: #e6e6e6;
+  padding: 0.2em 0.5em;
+  font-size: 0.9rem;
+}
+
+.footer-box {
+  /* background-color: #0f0f0f; */
+  color: #FFFFFF;
+}
+.footer-box h1{
+  color: #00d5ff;
+  font-size: 5em;
+}
