@@ -1,34 +1,52 @@
-/* add css varibles
-add css gobal verlibles
-add rem and em */
+:root {
+  --black: black;
+  --light-blue: #00d5ff;
+}
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
+  box-sizing: border-box;
+  background-color: var(--black);
 }
+.bi-chevron-left,
+.bi-chevron-right {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+.bi-chevron-left:hover,
+.bi-chevron-right:hover {
+  color: #949494;
+  transition: all 0.5s ease-out;
+}
+/* .circle-box{
+  position: absolute;
+  left: 47%;
+  bottom: 17%;
+} */
 
 .off-circle {
-  width: 11px;
-  height: 11px;
+  width: 0.6875em;
+  height: 0.6875em;
   background-color: #0a0611;
   border-radius: 50%;
-  margin: 0 3px;
-  border: 1px solid #01cff6;
+  margin: 0 0.2em;
+  border: 1px solid var(--light-blue);
   cursor: pointer;
 }
 .on-circle {
-  background-color: #01cff6;
+  background-color: var(--light-blue);
 }
 .btn-box button {
-  border: 2px solid #00d5ff;
+  border: 2px solid var(--light-blue);
 }
 .physical-btn {
   background-color: #000000;
-  color: #00d5ff;
+  color: var(--light-blue);
   border-radius: 5px 0 0 5px;
 }
 .digital-btn {
-  background-color: #00d5ff;
+  background-color: var(--light-blue);
   color: #000000;
   border-radius: 0 5px 5px 0;
 }
@@ -51,17 +69,17 @@ add rem and em */
 }
 .look-all-btn {
   background-color: #000000;
-  border: 1px solid #00d5ff;
+  border: 1px solid var(--light-blue);
   color: #e6e6e6;
   padding: 0.2em 0.5em;
   font-size: 0.9rem;
 }
 
 .footer-box {
-  /* background-color: #0f0f0f; */
-  color: #FFFFFF;
+  background-color: #0f0f0f;
+  color: #ffffff;
 }
-.footer-box h1{
-  color: #00d5ff;
+.footer-box h1 {
+  color: var(--light-blue);
   font-size: 5em;
 }
