@@ -10,8 +10,6 @@
 }
 .bi-chevron-left,
 .bi-chevron-right {
-  width: 2em;
-  height: 2em;
   cursor: pointer;
 }
 .bi-chevron-left:hover,
@@ -19,26 +17,8 @@
   color: #949494;
   transition: all 0.5s ease-out;
 }
-/* .circle-box{
-  position: absolute;
-  left: 47%;
-  bottom: 17%;
-} */
-
-.off-circle {
-  width: 0.6875em;
-  height: 0.6875em;
-  background-color: #0a0611;
-  border-radius: 50%;
-  margin: 0 0.2em;
-  border: 1px solid var(--light-blue);
-  cursor: pointer;
-}
-.on-circle {
-  background-color: var(--light-blue);
-}
 .btn-box button {
-  border: 2px solid var(--light-blue);
+  border: 1px solid var(--light-blue);
 }
 .physical-btn {
   background-color: #000000;
@@ -50,6 +30,7 @@
   color: #000000;
   border-radius: 0 5px 5px 0;
 }
+
 .clothing-accessories-box h1,
 .action-figures-box h1 {
   color: #e6e6e6;
@@ -64,7 +45,6 @@
   font-family: inherit;
   font-size: 0.9rem;
   text-align: center;
-  margin-top: 1rem;
   line-height: 2rem;
 }
 .look-all-btn {
@@ -76,10 +56,91 @@
 }
 
 .footer-box {
-  background-color: #0f0f0f;
   color: #ffffff;
 }
 .footer-box h1 {
   color: var(--light-blue);
   font-size: 5em;
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .bi-chevron-left,
+  .bi-chevron-right {
+    width: 3em;
+    height: 3em;
+  }
+  .clothing-accessories-box h1,
+  .action-figures-box h1 {
+    font-size: 1.6rem;
+  }
+  .look-all-btn {
+    padding: 0.1em 0.4em;
+    font-size: 1.1rem;
+  }
+  .footer-box h1 {
+    font-size: 4.5rem;
+  }
+  .footer-box span {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .bi-chevron-left,
+  .bi-chevron-right {
+    width: 1.9em;
+    height: 1.9em;
+  }
+  .clothing-accessories-box h1,
+  .action-figures-box h1 {
+    font-size: 1rem;
+  }
+  .action-figures-box p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .footer-box h1 {
+    font-size: 3rem;
+  }
+  .footer-box span {
+    font-size: 1rem;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .bi-chevron-left,
+  .bi-chevron-right {
+    width: 1em;
+    height: 1em;
+  }
+  .btn-box button {
+    border: 0.5px solid var(--light-blue);
+    font-size: 0.5rem;
+  }
+  .physical-btn {
+    border-radius: 1px 0 0 1px;
+  }
+  .digital-btn {
+    border-radius: 0 1px 1px 0;
+  }
+  .clothing-accessories-box h1,
+  .action-figures-box h1 {
+    font-size: 0.5rem;
+  }
+  .action-figures-box p {
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+  }
+  .look-all-btn {
+    padding: 0.1em 0.4em;
+    font-size: 0.4rem;
+  }
+  .footer-box h1 {
+    font-size: 1.5rem;
+  }
+  .footer-box span {
+    font-size: 0.5rem;
+  }
 }
